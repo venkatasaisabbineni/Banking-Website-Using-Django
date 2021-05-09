@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ block.super }}{% endblock title %}
+
+{% block content %}
+<div class="container" style="padding-top: 50px;">
+<div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Venkata Sai Sabbineni Private Bank</h1>
+        <hr>
+        <p class="lead text-muted">Welcome to Venkata Sai Sabbineni Private Bank! We provide various services like  Mobile Banking, Loan Service,  Doorstep Banking, Whatsapp Banking, UPI Payment, Bank in Person, and many more.In order to utilise all the services</p>
+        <p>
+          <a class="btn btn-primary btn-md" href="{% url 'accounts:login' %}" role="button">User Login</a>
+          <a class="btn btn-success btn-md" href="{% url 'accounts:register' %}" role="button">User SignUp</a>
+        </p>
+      </div>
+</div>
+</div>
+
+{% endblock content %}
